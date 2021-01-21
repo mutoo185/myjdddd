@@ -1,130 +1,124 @@
-# LoonÈí¼şTaskÅäÖÃ By LXK9301
-# GitHubÖ÷Ò³(https://github.com/LXK9301/jd_scripts)
-# TGÌÖÂÛ×é (https://t.me/JD_fruit_pet)
-# TGÍ¨ÖªÆµµÀ (https://t.me/jdfruit)
-# LoonµÄTask½Å±¾¶©ÔÄÁ´½Ó: https://raw.githubusercontent.com/LXK9301/jd_scripts/master/Loon/lxk0301_LoonTask.conf
-# Ê¹ÓÃ·½·¨:´ò¿ªAPP£¬¶¥²¿µÄÅäÖÃ -> ½Å±¾ -> ¶©ÔÄ½Å±¾- > µã»÷ÓÒÉÏ½Ç+ºÅ -> Ìí¼ÓurlÁ´½Ó (https://raw.githubusercontent.com/LXK9301/jd_scripts/master/Loon/lxk0301_LoonTask.conf)
 
 hostname = wq.jd.com, draw.jdfcloud.com, jdjoy.jd.com, account.huami.com
-# ¶«¶«Å©³¡
-cron "5 6-18/6 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_fruit.js,tag=¶«¶«Å©³¡
+# ä¸œä¸œå†œåœº
+cron "5 6-18/6 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_fruit.js,tag=ä¸œä¸œå†œåœº
 
-# ¶«¶«ÃÈ³è
-cron "10 7-19/6 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_pet.js,tag=¶«¶«ÃÈ³è
+# ä¸œä¸œèŒå® 
+cron "10 7-19/6 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_pet.js,tag=ä¸œä¸œèŒå® 
 
-# ¾©¶«ÖÖ¶¹µÃ¶¹
-cron "1 7-21/2 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_plantBean.js,tag=¾©¶«ÖÖ¶¹µÃ¶¹
+# äº¬ä¸œç§è±†å¾—è±†
+cron "1 7-21/2 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_plantBean.js,tag=äº¬ä¸œç§è±†å¾—è±†
 
-# ³èÍôÍô(Ö÷ÒªÊÇÈÕ³£ÈÎÎñ,²»¹ıÀïÃæÒ²ÓĞÎ¹Ê³ºÍÁìÈ¡Èı²Í¹·Á¸)
-cron "15 1,7,9,12,18,21 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy.js,tag=³èÍôÍô
+# å® æ±ªæ±ª(ä¸»è¦æ˜¯æ—¥å¸¸ä»»åŠ¡,ä¸è¿‡é‡Œé¢ä¹Ÿæœ‰å–‚é£Ÿå’Œé¢†å–ä¸‰é¤ç‹—ç²®)
+cron "15 1,7,9,12,18,21 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy.js,tag=å® æ±ªæ±ª
 
-# ³èÍôÍôÎ¹Ê³
-cron "12 */1 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_feedPets.js,tag=³èÍôÍôÎ¹Ê³
+# å® æ±ªæ±ªå–‚é£Ÿ
+cron "12 */1 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_feedPets.js,tag=å® æ±ªæ±ªå–‚é£Ÿ
 
-# ³èÍôÍôÍµºÃÓÑ»ı·ÖÓë¹·Á¸
-cron "0 0,6 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_steal.js,tag=³èÍôÍôÍµºÃÓÑ»ı·ÖÓë¹·Á¸
+# å® æ±ªæ±ªå·å¥½å‹ç§¯åˆ†ä¸ç‹—ç²®
+cron "0 0,6 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_steal.js,tag=å® æ±ªæ±ªå·å¥½å‹ç§¯åˆ†ä¸ç‹—ç²®
 
-# ³èÍôÍô»ı·Ö¶Ò»»½±Æ·
-cron "0 0,8,12,16 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_reward.js,tag=³èÍôÍô»ı·Ö¶Ò»»½±Æ·
+# å® æ±ªæ±ªç§¯åˆ†å…‘æ¢å¥–å“
+cron "0 0,8,12,16 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_reward.js,tag=å® æ±ªæ±ªç§¯åˆ†å…‘æ¢å¥–å“
 
-# ¾©¶«ÌìÌì¼ÓËÙ
-cron "8 */3 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_speed.js,tag=¾©¶«ÌìÌì¼ÓËÙ
+# äº¬ä¸œå¤©å¤©åŠ é€Ÿ
+cron "8 */3 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_speed.js,tag=äº¬ä¸œå¤©å¤©åŠ é€Ÿ
 
-# ¾©¶«Ò¡Ç®Ê÷
-cron "3 */5 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_moneyTree.js,tag=¾©¶«Ò¡Ç®Ê÷
+# äº¬ä¸œæ‘‡é’±æ ‘
+cron "3 */5 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_moneyTree.js,tag=äº¬ä¸œæ‘‡é’±æ ‘
 
-# ¾©Ğ¡³¬
-cron "11 1-23/2 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_superMarket.js,tag=¾©Ğ¡³¬
+# äº¬å°è¶…
+cron "11 1-23/2 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_superMarket.js,tag=äº¬å°è¶…
 
-# ¾©Ğ¡³¬¶Ò»»½±Æ·
-cron "0,30 0 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_blueCoin.js,tag=¾©Ğ¡³¬¶Ò»»½±Æ·
+# äº¬å°è¶…å…‘æ¢å¥–å“
+cron "0,30 0 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_blueCoin.js,tag=äº¬å°è¶…å…‘æ¢å¥–å“
 
-# È¡¹Ø¾©¶«µêÆÌÉÌÆ·
-cron "55 23 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_unsubscribe.js,tag=È¡¹Ø¾©¶«µêÆÌÉÌÆ·
+# å–å…³äº¬ä¸œåº—é“ºå•†å“
+cron "55 23 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_unsubscribe.js,tag=å–å…³äº¬ä¸œåº—é“ºå•†å“
 
-# ½øµêÁì¶¹
-cron "10 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_shop.js,tag=½øµêÁì¶¹
+# è¿›åº—é¢†è±†
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_shop.js,tag=è¿›åº—é¢†è±†
 
-#Ò¡¾©¶¹
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_club_lottery.js,tag=Ò¡¾©¶¹
+#æ‘‡äº¬è±†
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_club_lottery.js,tag=æ‘‡äº¬è±†
 
-#¾©¶«È«Ãñ¿ªºì°ü
-cron "1 1 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_redPacket.js, tag=¾©¶«È«Ãñ¿ªºì°ü
+#äº¬ä¸œå…¨æ°‘å¼€çº¢åŒ…
+cron "1 1 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_redPacket.js, tag=äº¬ä¸œå…¨æ°‘å¼€çº¢åŒ…
 
-#¾©¶¹±ä¶¯Í¨Öª
-cron "2 9 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_change.js, tag=¾©¶¹±ä¶¯Í¨Öª
+#äº¬è±†å˜åŠ¨é€šçŸ¥
+cron "2 9 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_change.js, tag=äº¬è±†å˜åŠ¨é€šçŸ¥
 
-#µãµãÈ¯
-cron "20 0,20 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_necklace.js, tag=µãµãÈ¯
+#ç‚¹ç‚¹åˆ¸
+cron "20 0,20 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_necklace.js, tag=ç‚¹ç‚¹åˆ¸
 
-#Ê®Ôª½Ö
-cron "10 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_syj.js, tag=Ê®Ôª½Ö
+#åå…ƒè¡—
+cron "10 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_syj.js, tag=åå…ƒè¡—
 
-#¶«¶«Ğ¡ÎÑ
-cron "16 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_small_home.js, tag=¶«¶«Ğ¡ÎÑ
+#ä¸œä¸œå°çª
+cron "16 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_small_home.js, tag=ä¸œä¸œå°çª
 
-#¾©Ï²¹¤³§
-cron "26 * * * *" script-path= https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_dreamFactory.js, tag=¾©Ï²¹¤³§
+#äº¬å–œå·¥å‚
+cron "26 * * * *" script-path= https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_dreamFactory.js, tag=äº¬å–œå·¥å‚
 
-#¶«¶«¹¤³§
-cron "10 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jdfactory.js,tag=¶«¶«¹¤³§
+#ä¸œä¸œå·¥å‚
+cron "10 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jdfactory.js,tag=ä¸œä¸œå·¥å‚
 
-#³èÍôÍôÑûÇëÖúÁ¦ÓëÈüÅÜÖúÁ¦
-cron "15 10 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, tag=³èÍôÍôÑûÇëÖúÁ¦ÓëÈüÅÜÖúÁ¦
+#å® æ±ªæ±ªé‚€è¯·åŠ©åŠ›ä¸èµ›è·‘åŠ©åŠ›
+cron "15 10 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, tag=å® æ±ªæ±ªé‚€è¯·åŠ©åŠ›ä¸èµ›è·‘åŠ©åŠ›
 
-#³èÍôÍôÖúÁ¦¸üĞÂToken
-http-response ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=3600, tag=³èÍôÍôÖúÁ¦¸üĞÂToken
+#å® æ±ªæ±ªåŠ©åŠ›æ›´æ–°Token
+http-response ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=3600, tag=å® æ±ªæ±ªåŠ©åŠ›æ›´æ–°Token
 
-#³èÍôÍôÖúÁ¦»ñÈ¡Token
-http-request ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=3600, tag=³èÍôÍôÖúÁ¦»ñÈ¡Token
+#å® æ±ªæ±ªåŠ©åŠ›è·å–Token
+http-request ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=3600, tag=å® æ±ªæ±ªåŠ©åŠ›è·å–Token
 
-# ³èÍôÍôÇ¿ÖÆÎª±ğÈËÖúÁ¦
-http-request ^https:\/\/draw\.jdfcloud\.com\/\/pet\/enterRoom\/h5\?invitePin=.*(&inviteSource=task_invite&shareSource=\w+&inviteTimeStamp=\d+&openId=\w+)?&reqSource=weapp|^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/pet\/helpFriend\?friendPin script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_help.js, requires-body=true, timeout=3600, tag=³èÍôÍôÇ¿ÖÆÎª±ğÈËÖúÁ¦
+# å® æ±ªæ±ªå¼ºåˆ¶ä¸ºåˆ«äººåŠ©åŠ›
+http-request ^https:\/\/draw\.jdfcloud\.com\/\/pet\/enterRoom\/h5\?invitePin=.*(&inviteSource=task_invite&shareSource=\w+&inviteTimeStamp=\d+&openId=\w+)?&reqSource=weapp|^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/pet\/helpFriend\?friendPin script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_help.js, requires-body=true, timeout=3600, tag=å® æ±ªæ±ªå¼ºåˆ¶ä¸ºåˆ«äººåŠ©åŠ›
 
-#¾Û±¦ÅèÍ¶¹·Á¸¸¨Öú(github@Zero-S1°áµÄ)
-http-response ^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/pet\/getPetTreasureBox script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_petTreasureBox.js, requires-body=true, timeout=3600, tag=¾Û±¦ÅèÍ¶¹·Á¸¸¨Öú
+#èšå®ç›†æŠ•ç‹—ç²®è¾…åŠ©(github@Zero-S1æ¬çš„)
+http-response ^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/pet\/getPetTreasureBox script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_petTreasureBox.js, requires-body=true, timeout=3600, tag=èšå®ç›†æŠ•ç‹—ç²®è¾…åŠ©
 
-# ¾©¶«¿ìµİ
-cron "10 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_kd.js, tag=¾©¶«¿ìµİÇ©µ½
+# äº¬ä¸œå¿«é€’
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_kd.js, tag=äº¬ä¸œå¿«é€’ç­¾åˆ°
 
-# Áì¾©¶¹¶îÍâ½±Àø
-cron "10 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_home.js, tag=Áì¾©¶¹¶îÍâ½±Àø
+# é¢†äº¬è±†é¢å¤–å¥–åŠ±
+cron "10 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_home.js, tag=é¢†äº¬è±†é¢å¤–å¥–åŠ±
 
-# ¾©¶«½¡¿µ
-#cron "3 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jdh.js, tag=¾©¶«½¡¿µ
-# ¾©¶«×¬×¬
-cron "10 11 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jdzz.js, tag=¾©¶«×¬×¬
-# ¾©¶«ÃëÉ±ºì°üÓê
-# cron "10 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_ms_redrain.js, tag=ÃëÉ±ºì°üÓê
-#×¢Ïú¾©¶«µêÆÌ»áÔ±¿¨
-cron "23 12 * * 6" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_unbind.js, tag=×¢Ïú¾©¶«µêÆÌ»áÔ±¿¨
-# ¾©¶«Ö±²¥
-cron "10-20/5 12 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_live.js, tag=¾©¶«Ö±²¥
-# ¾©¶«¿´Ò»¿´
-# cron "40 9,10 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_watch.js, tag=¾©¶«¿´Ò»¿´
-#Ö±²¥ºì°üÓê
-# cron "1 0,20,9-23/2 15-31 12 *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_live_redrain.js, tag=Ö±²¥ºì°üÓê
-# ½ğÈÚ´ò¿¨ÁìÄêÖÕ½±
-# cron "10 6 1-31 12 *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jr_sign.js, tag=½ğÈÚ´ò¿¨ÁìÄêÖÕ½±
-# ½¡¿µ³é½±»ú
-#cron "10 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_health.js, tag=½¡¿µ³é½±»ú
-# ·è¿ñµÄjoyÈÕ³£ÈÎÎñ
-cron "30 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_crazy_joy.js, tag=·è¿ñµÄjoyÈÕ³£ÈÎÎñ
-#¾©Ï²Ç©µ½
-cron "5 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jx_sign.js, tag=¾©Ï²Ç©µ½
-#¿Ú´üÊéµê
-cron "1 8,12,18 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bookshop.js, tag=¿Ú´üÊéµê
-#¾©¶«Äê»õ½Ú
-cron "1 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nh.js, tag=¾©¶«Äê»õ½Ú
-#¾©¶«ÉñÏÉÊéÔº
-cron "0 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_immortal.js, tag=¾©¶«ÉñÏÉÊéÔº
-#¾©Ï²Å©³¡
-http-request ^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.cookie.js, requires-body=false, timeout=3600, tag=¾©Ï²Å©³¡cookie
-cron "0 9,12,18 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jxnc.js, tag=¾©Ï²Å©³¡
-#¾©¶«Õ¨ÄêÊŞ
-cron "0 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js, tag=¾©¶«Õ¨ÄêÊŞ
-#¾©¶«Õ¨ÄêÊŞ¶¨Ê±
-cron "20 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js, tag=¾©¶«ÊÕ
+# äº¬ä¸œå¥åº·
+#cron "3 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jdh.js, tag=äº¬ä¸œå¥åº·
+# äº¬ä¸œèµšèµš
+cron "10 11 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jdzz.js, tag=äº¬ä¸œèµšèµš
+# äº¬ä¸œç§’æ€çº¢åŒ…é›¨
+# cron "10 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_ms_redrain.js, tag=ç§’æ€çº¢åŒ…é›¨
+#æ³¨é”€äº¬ä¸œåº—é“ºä¼šå‘˜å¡
+cron "23 12 * * 6" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_unbind.js, tag=æ³¨é”€äº¬ä¸œåº—é“ºä¼šå‘˜å¡
+# äº¬ä¸œç›´æ’­
+cron "10-20/5 12 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_live.js, tag=äº¬ä¸œç›´æ’­
+# äº¬ä¸œçœ‹ä¸€çœ‹
+# cron "40 9,10 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_watch.js, tag=äº¬ä¸œçœ‹ä¸€çœ‹
+#ç›´æ’­çº¢åŒ…é›¨
+# cron "1 0,20,9-23/2 15-31 12 *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_live_redrain.js, tag=ç›´æ’­çº¢åŒ…é›¨
+# é‡‘èæ‰“å¡é¢†å¹´ç»ˆå¥–
+# cron "10 6 1-31 12 *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jr_sign.js, tag=é‡‘èæ‰“å¡é¢†å¹´ç»ˆå¥–
+# å¥åº·æŠ½å¥–æœº
+#cron "10 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_health.js, tag=å¥åº·æŠ½å¥–æœº
+# ç–¯ç‹‚çš„joyæ—¥å¸¸ä»»åŠ¡
+cron "30 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_crazy_joy.js, tag=ç–¯ç‹‚çš„joyæ—¥å¸¸ä»»åŠ¡
+#äº¬å–œç­¾åˆ°
+cron "5 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jx_sign.js, tag=äº¬å–œç­¾åˆ°
+#å£è¢‹ä¹¦åº—
+cron "1 8,12,18 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bookshop.js, tag=å£è¢‹ä¹¦åº—
+#äº¬ä¸œå¹´è´§èŠ‚
+cron "1 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nh.js, tag=äº¬ä¸œå¹´è´§èŠ‚
+#äº¬ä¸œç¥ä»™ä¹¦é™¢
+cron "0 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_immortal.js, tag=äº¬ä¸œç¥ä»™ä¹¦é™¢
+#äº¬å–œå†œåœº
+http-request ^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.cookie.js, requires-body=false, timeout=3600, tag=äº¬å–œå†œåœºcookie
+cron "0 9,12,18 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_jxnc.js, tag=äº¬å–œå†œåœº
+#äº¬ä¸œç‚¸å¹´å…½
+cron "0 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js, tag=äº¬ä¸œç‚¸å¹´å…½
+#äº¬ä¸œç‚¸å¹´å…½å®šæ—¶
+cron "20 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js, tag=äº¬ä¸œæ”¶
 
 
 
