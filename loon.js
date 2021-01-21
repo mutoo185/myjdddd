@@ -165,3 +165,6 @@ cron "1 7 13 1 *" script-path=https://raw.githubusercontent.com/shylocks/Loon/ma
 cron "10 7 * * *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_sx.js,tag=海产新年抽奖
 # 京年团圆pick
 cron "5 0 19,20 1 *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_vote.js,tag=京年团圆pick
+#京东炸年兽小程序
+cron "50 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian_wechat.js,tag=京东炸年兽小程序🧨
+
