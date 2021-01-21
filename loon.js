@@ -119,7 +119,8 @@ cron "0 9,12,18 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_
 cron "0 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js, tag=京东炸年兽
 #京东炸年兽定时
 cron "20 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js, tag=京东收
-
+#京东炸年兽签到任务
+cron "30 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian_sign.js, tag=京东炸年兽签到任务
 
 
 
