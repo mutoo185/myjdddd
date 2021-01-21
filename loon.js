@@ -92,12 +92,10 @@ cron "10 11 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scri
 # cron "10 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_ms_redrain.js, tag=秒杀红包雨
 #注销京东店铺会员卡
 cron "23 12 * * 6" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_unbind.js, tag=注销京东店铺会员卡
-# 京东直播
-cron "10-20/5 12 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_live.js, tag=京东直播
+
 # 京东看一看
 # cron "40 9,10 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_watch.js, tag=京东看一看
-#直播红包雨
-# cron "1 0,20,9-23/2 15-31 12 *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_live_redrain.js, tag=直播红包雨
+
 # 金融打卡领年终奖
 # cron "10 6 1-31 12 *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jr_sign.js, tag=金融打卡领年终奖
 # 健康抽奖机
@@ -128,4 +126,25 @@ cron "55 23 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scri
 #京东炸年兽AR
 cron "0 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian_ar.js,tag=京东炸年兽AR
 
-
+# 超级直播间红包雨
+cron "30,31 20-23/1 19 1 *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain.js, tag=超级直播间红包雨
+# 直播间红包雨
+cron "0,1 19-21/1 * * *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain2.js, tag=直播间红包雨
+# 半点红包雨
+cron "30,31 12-23/1 * * *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain_half.js, tag=半点红包雨
+# 年货直播红包雨
+cron "0 0,9,11,13,15,17,19,20,21,23 3,5,20-30/1 1,2 *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain_nian.js, tag=年货直播红包雨
+# 官方号直播红包雨
+cron "0 0,9,11,13,15,17,19,20,21,22,23 * * *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain_offical.js, tag=官方号直播红包雨
+# 盲盒抽京豆
+cron "1 7 * * *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_mh.js,tag=盲盒抽京豆
+# 超级直播间幸运值抽京豆
+cron "10 20 15 1 *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_mh_super.js,tag=超级直播间幸运值抽京豆
+# 京东秒秒币
+cron "10 7 * * *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_ms.js,tag=京东秒秒币
+# 神券京豆
+cron "1 7 13 1 *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_super_coupon.js,tag=神券京豆
+# 海产新年抽奖
+cron "10 7 * * *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_sx.js,tag=海产新年抽奖
+# 京年团圆pick
+cron "5 0 19,20 1 *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_vote.js,tag=京年团圆pick
