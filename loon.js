@@ -6,6 +6,8 @@
 # 使用方法:打开APP，顶部的配置 -> 脚本 -> 订阅脚本- > 点击右上角+号 -> 添加url链接 (https://raw.githubusercontent.com/LXK9301/jd_scripts/master/Loon/lxk0301_LoonTask.conf)
 
 hostname = api.m.jd.com, draw.jdfcloud.com, jdjoy.jd.com, account.huami.com
+#京东多合一签到
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js，  tag=京东多合一签到
 
 # 京豆变动通知
 cron "2 9 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_change.js, tag=京豆变动通知
