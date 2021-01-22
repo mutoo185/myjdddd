@@ -7,7 +7,7 @@
 
 hostname = api.m.jd.com, draw.jdfcloud.com, jdjoy.jd.com, account.huami.com
 #京东多合一签到
-cron "30 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东多合一签到
+cron "30 0 * * *" tag=京东多合一签到, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 # 京豆变动通知
 cron "2 9 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_change.js, tag=京豆变动通知
