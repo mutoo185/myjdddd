@@ -4,10 +4,12 @@
 # TG通知频道 (https://t.me/jdfruit)
 # Loon的Task&Cookies脚本订阅链接: https://raw.githubusercontent.com/LXK9301/jd_scripts/master/Loon/lxk0301_LoonTask.conf
 # 使用方法:打开APP，顶部的配置 -> 脚本 -> 订阅脚本- > 点击右上角+号 -> 添加url链接 (https://raw.githubusercontent.com/LXK9301/jd_scripts/master/Loon/lxk0301_LoonTask.conf)
-
 hostname = api.m.jd.com, draw.jdfcloud.com, jdjoy.jd.com, account.huami.com
+# 获取多账号京东Cookie
+http-request https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/JD_extra_cookie.js, tag=获取多账号京东Cookie
+
 #京东多合一签到
-cron "30 0 * * *" tag=京东多合一签到, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+cron "0 1 * * *" tag=京东多合一签到, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 
 # 京豆变动通知
@@ -29,7 +31,7 @@ cron "2 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_script
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_club_lottery.js,tag=摇京豆
 
 # crazyJoy任务
-cron "10 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_crazy_joy.js,tag=crazyJoy任务
+cron "20 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_crazy_joy.js,tag=crazyJoy任务
 
 # 京喜工厂
 cron "10 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_dreamFactory.js,tag=京喜工厂
@@ -97,17 +99,20 @@ cron "10 0,20 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_sc
 # 京东年货节
 cron "1 7 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nh.js,tag=京东年货节
 
-# 京东炸年兽
-cron "10 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js,tag=京东炸年兽
+# 京东炸年兽🧨
+cron "10 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js,tag=京东炸年兽🧨
+
+# 京东炸年兽领爆竹🧨
+cron "50 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js,tag=京东收🧨
 
 # 京东炸年兽AR
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian_ar.js,tag=京东炸年兽AR
 
-# 京东炸年兽签到任务
+# 京东炸年兽签到任务🧨
 cron "30 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian_sign.js,tag=京东炸年兽签到任务🧨
 
-# 京东炸年兽领爆竹
-cron "50 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js,tag=京东收
+# 京东炸年兽小程序🧨
+cron "50 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian_wechat.js,tag=京东炸年兽小程序🧨
 
 # 东东萌宠
 cron "15 6-18/6 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_pet.js,tag=东东萌宠
