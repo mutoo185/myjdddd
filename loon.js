@@ -1,16 +1,6 @@
-# IOS Loon Task&Cookies配置 By LXK9301
-# GitHub主页(https://github.com/LXK9301/jd_scripts)
-# TG讨论组 (https://t.me/JD_fruit_pet)
-# TG通知频道 (https://t.me/jdfruit)
-# Loon的Task&Cookies脚本订阅链接: https://raw.githubusercontent.com/LXK9301/jd_scripts/master/Loon/lxk0301_LoonTask.conf
-# 使用方法:打开APP，顶部的配置 -> 脚本 -> 订阅脚本- > 点击右上角+号 -> 添加url链接 (https://raw.githubusercontent.com/LXK9301/jd_scripts/master/Loon/lxk0301_LoonTask.conf)
 hostname = api.m.jd.com, draw.jdfcloud.com, jdjoy.jd.com, account.huami.com
 # 获取多账号京东Cookie
 http-request https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/JD_extra_cookie.js, tag=获取多账号京东Cookie
-
-#京东多合一签到
-cron "0 1 * * *" tag=京东多合一签到, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-
 
 # 京豆变动通知
 cron "2 9 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_change.js, tag=京豆变动通知
@@ -68,12 +58,6 @@ cron "0 0-16/8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_s
 
 # 宠汪汪赛跑
 cron "15 10 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, tag=宠汪汪邀请助力与赛跑助力
-
-# 宠汪汪助力更新Token
-http-response ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=3600, tag=宠汪汪助力更新Token
-
-# 宠汪汪助力获取Token
-http-request ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=3600, tag=宠汪汪助力获取Token
 
 # 宠汪汪偷好友积分与狗粮
 cron "0 0-10/2 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_steal.js,tag=宠汪汪偷好友积分与狗粮
